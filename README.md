@@ -8,6 +8,8 @@ Maker Media GmbH
 
 ### Umbau einer Mini-CNC-Fräse zu einem Lötpasten-Dispenser für SMD-Bestückung
 
+### von Carsten Meyer
+
 **Teure Edelstahl-Pastenschablonen und die unvermeidliche Sauerei beim Aufragen erspart man sich mit unserem DIY-Dispenser: So macht SMD-Bestücken wieder Spaß!**
 
 Material:
