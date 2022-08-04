@@ -26,4 +26,6 @@ Material:
 
 Zur Kompilierung ist die kostenlose [Delphi-Community-Edition von Embarcadero](https://www.embarcadero.com/de/products/delphi/starter/free-download) erforderlich. Zusätzlich muss in der IDE die [TComPort-Komponente](https://sourceforge.net/projects/comport/) installiert werden, über die die Software zur Kommunikation mit dem USB-Seriell-Chip CH340 auf der Steuerungsplatine der Fräse zugreift.
 
+Wer keine eigenen Anpassungen an die Software benötigt, kann auch das fertig kompilierte **Dispenser.exe** (Windows) herunterladen. Die Voreinstellungs-Datei **Dispenser.INI** muss im gleichen Verzeichnis wie das Programm liegen, ansonsten ist keine Installation erforderlich.
+
 ![Screenshot](https://github.com/MakeMagazinDE/Solder-Paste-Dispenser/blob/main/dispenser_screen.png)
