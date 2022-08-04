@@ -278,7 +278,7 @@ begin
   Form1.EditPadTimeRO.Text:= FloatToStrDot(dwell_time);
   SendSingleCommandStr('G0 X' + FloatToStrDot(dx) + ' Y' + FloatToStrDot(dy));
   SendSingleCommandStr('G0 Z2');
-  SendSingleCommandStr('M3');
+  SendSingleCommandStr('M3 S1000');
   // Dwell Time, Sekunden bei GRBL - Vorimpuls
   SendSingleCommandStr('G4 P' + FloatToStr4Dot(dwell_time));
   SendSingleCommandStr('M5');
@@ -852,7 +852,7 @@ end;
 procedure TForm1.BitBtnFeedAirMouseDown(Sender: TObject; Button: TMouseButton;
   Shift: TShiftState; X, Y: Integer);
 begin
-  SendSingleCommandStr('M3');   // on
+  SendSingleCommandStr('M3 S1000');   // on
   while GetAsyncKeyState(VK_LBUTTON) <> 0 do begin
   end;
   SendSingleCommandStr('M5');   // on
