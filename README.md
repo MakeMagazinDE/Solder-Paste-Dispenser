@@ -12,6 +12,8 @@ Maker Media GmbH
 
 **Teure Edelstahl-Pastenschablonen und die unvermeidliche Sauerei beim Aufragen erspart man sich mit unserem DIY-Dispenser: So macht SMD-Bestücken wieder Spaß!**
 
+Wer als Maker nicht nur Einzelstücke, sondern auch mal eine Kleinserie auflegt, kommt um einen unbeliebten Arbeitschritt nicht herum: Das Auftragen der SMD-Lötpaste mit Edelstahl-Schablone und Spachtel endet regelmäßig in einer krassen Sauerei – von den Kosten für die (möglicherweise nur wenige Male benutzten) Schablone ganz abgesehen. In unserer Make-Werkstatt stand seit vielen Monaten eine kleine Billig-CNC-Fräse namens CNC1610 herum, die wegen des eiernden Spindelmotors und der eher labilen Konstruktion niemand mehr ernsthaft benutzen wollte. Das brachte uns auf die Idee, statt des Motors eine Lötpasten-Dosierspritze einzuspannen, so dass der Pastenauftrag programmgesteuert erfolgen kann.
+
 Material:
 
 * Mini-CNC-Fräse, z.B. CNC1610
