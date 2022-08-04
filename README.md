@@ -19,11 +19,11 @@ Material:
 * Mini-CNC-Fräse, z.B. CNC1610 (oder ähnlich, gern auch größer; es sind auch Chassis für leichte Laser-Gravierer geeignet, da keine großen Kräfte aufgewendet werden)
 * Falls nicht beiliegend: Schrittmotor-Steuerungsplatine (3 Achsen) auf ATmega328/Arduino-Basis mit GRBL-Firmware
 * Falls nicht beiliegend: Netzteil 12V/3A
+* 3 Mikroschalter in Miniaturausführung, für Achsen-Endschalter 
 * Dispenser AD-982
 * Ikea-Leselampe
 * Stahlblech 1mm, 20 x 20 cm
 * Selbstklebende Schaumstoff-Matte (2mm stark) als Platinen-Unterlage
-* 3 Mikroschalter, Miniaturausführung
 * Neodym-Magnete zur Platinen-Fixierung
 * Druckluft-Stecker mit Verschraubung für 6mm-Schläuche (der dem AD-982 beiliegende Druckluft-Stecker ist mit europäischen Kompressoren nicht kompatibel)
 
