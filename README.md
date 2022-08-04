@@ -20,4 +20,4 @@ Material:
 * 3 Mikroschalter, Miniaturausführung
 * Neodym-Magnete zur Platinen-Fixierung
 
-
+Zur kompilierung ist die kostenlose Delphi-Community-Edition von Embarcadero erforderlich. Zusätzlich muss die [TComPort-Komponente](https://sourceforge.net/projects/comport/) installiert werden, auf die die Software zugreift.
