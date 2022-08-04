@@ -17,8 +17,9 @@ Wer als Maker nicht nur Einzelstücke, sondern auch mal eine Kleinserie auflegt,
 Material:
 
 * Mini-CNC-Fräse, z.B. CNC1610 (oder ähnlich, gern auch größer; es sind auch Chassis für leichte Laser-Gravierer geeignet, da keine großen Kräfte aufgewendet werden)
+* Falls nicht beiliegend: Schrittmotor-Steuerungsplatine (3 Achsen) auf ATmega328/Arduino-Basis mit GRBL-Firmware
+* Falls nicht beiliegend: Netzteil 12V/3A
 * Dispenser AD-982
-* Netzteil 12V/3A
 * Ikea-Leselampe
 * Stahlblech 1mm, 20 x 20 cm
 * Selbstklebende Schaumstoff-Matte (2mm stark) als Platinen-Unterlage
