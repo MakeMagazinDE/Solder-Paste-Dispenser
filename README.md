@@ -2,7 +2,7 @@
 
 Maker Media GmbH
 
-![Aufmacher](https://github.com/MakeMagazinDE/Zirkulationspumpensteuerung/blob/main/aufm_schmal.JPG)
+![Aufmacher](https://github.com/MakeMagazinDE/Solder-Paste-Dispenser/blob/main/cnc1610_s.JPG)
 
 # Solder-Paste-Dispenser
 
