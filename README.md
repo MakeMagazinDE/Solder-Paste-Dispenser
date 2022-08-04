@@ -12,7 +12,7 @@ Maker Media GmbH
 
 Material:
 
-* Mini-CNC-Fräase, z.B. CNC1610
+* Mini-CNC-Fräse, z.B. CNC1610
 * Dispenser AD-982
 * Netzteil 12V/3A
 * Ikea-Leselampe
