@@ -8,6 +8,8 @@ Maker Media GmbH
 
 ### Umbau einer Mini-CNC-Fräse zu einem Lötpasten-Dispenser für SMD-Bestückung
 
+**Teure Edelstahl-Pastenschablonen und die unvermeidliche Sauerei beim Aufragen erspart man sich mit unserem DIY-Dispenser: So macht SMD-Bestücken wieder Spaß!**
+
 Material:
 
 * Mini-CNC-Fräase, z.B. CNC1610
@@ -15,3 +17,7 @@ Material:
 * Netzteil 12V/3A
 * Ikea-Leselampe
 * Stahlblech 1mm, 20 x 20 cm
+* 3 Mikroschalter, Miniaturausführung
+* Neodym-Magnete zur Platinen-Fixierung
+
+
