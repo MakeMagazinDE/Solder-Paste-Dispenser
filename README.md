@@ -16,7 +16,7 @@ Wer als Maker nicht nur Einzelstücke, sondern auch mal eine Kleinserie auflegt,
 
 Material:
 
-* Mini-CNC-Fräse, z.B. CNC1610
+* Mini-CNC-Fräse, z.B. CNC1610 (oder ähnlich, gern auch größer; es sind auch Chassis für leichte Laser-Gravierer geeignet, da keine großen Kräfte aufgewendet werden)
 * Dispenser AD-982
 * Netzteil 12V/3A
 * Ikea-Leselampe
