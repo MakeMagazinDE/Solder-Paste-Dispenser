@@ -21,8 +21,10 @@ Material:
 * Netzteil 12V/3A
 * Ikea-Leselampe
 * Stahlblech 1mm, 20 x 20 cm
+* Selbstklebende Schaumstoff-Matte (2mm stark) als Platinen-Unterlage
 * 3 Mikroschalter, Miniaturausführung
 * Neodym-Magnete zur Platinen-Fixierung
+* Druckluft-Stecker mit Verschraubung für 6mm-Schläuche (der dem AD-982 beiliegende Druckluft-Stecker ist mit europäischen Kompressoren nicht kompatibel)
 
 Zur Kompilierung ist die kostenlose [Delphi-Community-Edition von Embarcadero](https://www.embarcadero.com/de/products/delphi/starter/free-download) erforderlich. Zusätzlich muss in der IDE die [TComPort-Komponente](https://sourceforge.net/projects/comport/) installiert werden, über die die Software zur Kommunikation mit dem USB-Seriell-Chip CH340 auf der Steuerungsplatine der Fräse zugreift.
 
