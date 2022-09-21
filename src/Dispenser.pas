@@ -115,6 +115,10 @@ type
     Label20: TLabel;
     EditPadTimeRO: TEdit;
     Label21: TLabel;
+    DispensethisPad1: TMenuItem;
+    N3: TMenuItem;
+    DispensePadswiththisAperture1: TMenuItem;
+    Label22: TLabel;
     procedure FormCreate(Sender: TObject);
     procedure Button_OpenClick(Sender: TObject);
     procedure Button_SettingsClick(Sender: TObject);
@@ -177,6 +181,8 @@ type
       Y: Integer);
     procedure DrawingBoxMouseUp(Sender: TObject; Button: TMouseButton;
       Shift: TShiftState; X, Y: Integer);
+    procedure DispensethisPad1Click(Sender: TObject);
+    procedure DispensePadswiththisAperture1Click(Sender: TObject);
   private
     { Private-Deklarationen }
   public
@@ -970,6 +976,49 @@ begin
   Memo1.Lines.Add(myStr);
 end;
 
+procedure TForm1.DispensePadswiththisAperture1Click(Sender: TObject);
+var gRow: Integer;
+  dx, dy, rx, ry: Double;
+begin
+  Memo1.Lines.Clear;
+  AbortFlag:= false;
+  for gRow:= 1 to SgBlocks.RowCount - 1 do begin
+    if AbortFlag then
+      break;
+    if SgBlocks.Cells[6, gRow] = 'OFF' then
+      continue;
+    if SgBlocks.Cells[3, gRow] <> SgApert.Cells[0, SgApert.Row] then
+      continue;
+    SgBlocks.Row:= gRow;
+    RefreshGerberDrawingSema:= true;
+    Application.ProcessMessages;  // damit Abbruch möglich ist
+    dx:= StrDotToFloat(SgBlocks.Cells[1, gRow]);
+    dy:= StrDotToFloat(SgBlocks.Cells[2, gRow]);
+    rx:= StrDotToFloat(SgBlocks.Cells[4, gRow]);
+    ry:= StrDotToFloat(SgBlocks.Cells[5, gRow]);
+    Dispense(dx, dy, rx, ry);
+  end;
+  SendSingleCommandStr('G53 G0 Z-1');
+  SendSingleCommandStr('G0 X0 Y0');
+end;
+
+procedure TForm1.DispensethisPad1Click(Sender: TObject);
+var gRow: Integer;
+  dx, dy, rx, ry: Double;
+begin
+  Memo1.Lines.Clear;
+  gRow:= SgBlocks.Row;
+  SearchApert(SgBlocks.Cells[3, gRow]);
+  RefreshGerberDrawingSema:= true;
+  dx:= StrDotToFloat(SgBlocks.Cells[1, gRow]);
+  dy:= StrDotToFloat(SgBlocks.Cells[2, gRow]);
+  rx:= StrDotToFloat(SgBlocks.Cells[4, gRow]);
+  ry:= StrDotToFloat(SgBlocks.Cells[5, gRow]);
+  Dispense(dx, dy, rx, ry);
+  SendSingleCommandStr('G53 G0 Z-1');
+  SendSingleCommandStr('G0 X0 Y0');
+end;
+
 procedure TForm1.DrawingBoxMouseDown(Sender: TObject; Button: TMouseButton;
   Shift: TShiftState; X, Y: Integer);
 begin
@@ -1270,7 +1319,6 @@ begin
   GetStatus;
 end;
 
-
 procedure TForm1.TimerDrawTimer(Sender: TObject);
 begin
   DrawGerber(SgBlocks.Row, SgApert.Row);
@@ -1278,21 +1326,23 @@ begin
   ZeroAllok:= ZeroXok and ZeroYok and ZeroZok;
   if BitBtnRun.Enabled <> ZeroAllok then begin
     BitBtnRun.Enabled:= ZeroAllok;
-    MovetothispadXY.Enabled:= ZeroAllok;
     BitBtnAbort.Enabled:= ZeroAllok;
     BitBtnGotoZero.Enabled:= ZeroAllok;
+    MovetothispadXY.Enabled:= ZeroAllok;
+    DispensethisPad1.Enabled:= ZeroAllok;
+    DispensePadswiththisAperture1.Enabled:= ZeroAllok;
   end;
+
   if BitBtnAllzero.Enabled <> Homed then begin
     BitBtnAllzero.Enabled:= Homed;
     BitBtnXzero.Enabled:= Homed;
     BitBtnYzero.Enabled:= Homed;
     BitBtnZzero.Enabled:= Homed;
-    SetReferenceNozzleisatthisPad1.Enabled:= Homed;
     BitBtnHome.Enabled:= Homed;
     BitBtnFeedAir.Enabled:= ComPort.Connected;
     BitBtnGotoPos.Enabled:= Homed;
+    SetReferenceNozzleisatthisPad1.Enabled:= Homed;
   end;
-
 end;
 
 procedure TForm1.TrackBar1Change(Sender: TObject);

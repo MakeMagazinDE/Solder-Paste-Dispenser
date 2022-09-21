@@ -1,7 +1,7 @@
 object Form1: TForm1
   Left = 0
   Top = 0
-  Caption = 'PasteDispenser by cm 8/22'
+  Caption = 'PasteDispenser 0.92 by cm 8/22'
   ClientHeight = 639
   ClientWidth = 884
   Color = clBtnFace
@@ -383,6 +383,13 @@ object Form1: TForm1
     Width = 34
     Height = 13
     Caption = 'Pad ms'
+  end
+  object Label22: TLabel
+    Left = 411
+    Top = 50
+    Width = 82
+    Height = 13
+    Caption = 'Dispense all Pads'
   end
   object Memo1: TMemo
     Left = 515
@@ -1114,6 +1121,10 @@ object Form1: TForm1
       Caption = 'Move to this Pad (XY)'
       OnClick = MovetothispadXYClick
     end
+    object DispensethisPad1: TMenuItem
+      Caption = 'Dispense this Pad'
+      OnClick = DispensethisPad1Click
+    end
     object N1: TMenuItem
       Caption = '-'
     end
@@ -1133,6 +1144,13 @@ object Form1: TForm1
   object PopupMenu2: TPopupMenu
     Left = 736
     Top = 176
+    object DispensePadswiththisAperture1: TMenuItem
+      Caption = 'Dispense Pads with this Aperture'
+      OnClick = DispensePadswiththisAperture1Click
+    end
+    object N3: TMenuItem
+      Caption = '-'
+    end
     object MenuItemApertCircle: TMenuItem
       Caption = 'Circle'
       OnClick = MenuItemApertCircleClick
